@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Background Music</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    #music-controls {
+        margin-top: 20px;
+    }
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<h1>Background Music</h1>
+<p>Do you want background music?</p>
+<div id="music-controls">
+    <a href="#" class="button" onclick="playMusic()">Yes</a>
+    <a href="clickpic.html" class="button">No</a>
+</div>
+<audio id="background-music" loop>
+    <source src="Taylor Swift - Jump Then Fall (Taylor's Version) (Lyric Video) (128 kbps).mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+    var audio = document.getElementById("background-music");
+
+    function playMusic() {
+        audio.play();
+        window.open("clickpic.html", "_blank");
+    }
+</script>
+</body>
+</html>

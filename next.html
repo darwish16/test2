@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clickable Image</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, violet, blue);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      position: relative;
+      text-align: center;
+    }
+
+    h1 {
+      color: white;
+      font-size: 24px;
+      position: absolute;
+      top: 10px; /* Adjust top position as needed */
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1; /* Ensure h1 appears above the image */
+    }
+
+    .clickable-image {
+      width: 200px; /* Adjust the width as needed */
+      height: auto; /* Maintains aspect ratio */
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>DAPAT LANGGGGG!!! CLICK YOU!!!</h1>
+    <a href="last.html">
+      <img src="you.jpg" alt="Me" class="clickable-image">
+    </a>
+  </div>
+</body>
+</html>
